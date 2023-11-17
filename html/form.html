@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servigaming</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/img/iconos/ruleta.png"
+    />
+    <link rel="stylesheet" href="/css/form.css">
+  </head>
+  <body>
+      <header>
+        <a href="" class="logo">
+          <img src="/img/iconos/captura logo.png" alt="Servigaming" class="imglogo" />
+        </a>
+        <ul class="navbarOptions">
+          <li>
+            <a href="/html/index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="#aboutUs">Quienes somos</a>
+          </li>
+          <li>
+            <a href="#contact">Contactanos</a>
+          </li>
+          <li>
+            <a href="<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.132357136823!2d-75.559383!3d6.255012000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442988b03207b9%3A0xc572a951dc575995!2sCl.%2060%20%2F%20Miranda%20%2345-14%2C%20Medell%C3%ADn%2C%20Villa%20Hermosa%2C%20Medell%C3%ADn%2C%20Antioquia%2C%20Colombia!5e0!3m2!1ses!2sus!4v1660859465110!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">Mapa</a>
+          </li>
+          <li>
+            <a href="./login.html">Ingresa</a>
+          </li>
+        </ul>
+      </header>
+    <main>
+      <section>
+        <div>
+          <a href="index.html" class="atras">
+            <img src="/img/iconos/volver (2).png" alt="inicio" width="50px" />
+          </a>
+        </div>
+      </section>
+      <section>
+        <div class="flex-box">
+          <form>
+            <label for="Fecha de Entrada" required>Fecha de Entrada</label>
+            <input type="date" class="date"/>
+            <label for="Cliente" >Cliente</label>
+            <input
+              type="text"
+              maxlength="40"
+              minlength="8"
+              required
+              autofocus
+              placeholder=" Ingrese el Nombre"
+            />
+            <label for="CC/NIT">CC/NIT</label>
+            <input
+              type="text"
+              maxlength="15"
+              minlength="8"
+              required
+              autofocus
+              placeholder=" Numero de identificacion"
+            />
+            <label for="Tel:">Tel:</label>
+            <input
+              type="text"
+              required
+              hrsd
+              minlength="8"
+              maxlength="15"
+              placeholder="3050307..."
+            />
+            <label for="Tipo de Servicio">Tipo de Servicio</label>
+            <select name="servicios" class="selectlist">
+              <option disabled selected="">Seleccione un Servicio</option>
+              <option value="1">Servicios Tecnicos</option>
+              <option value="2">Reparacion Tarjeta</option>
+              <option value="3">Reparacion Fuente</option>
+              <option value="4">Reparacion Monitor</option>
+            </select>
+            <label for="Descripcion">Descripcion</label>
+            <textarea placeholder="añade detalladamente todo lo relacionado con el servicio" autofocus required></textarea width="30px">
+              <br>
+            <button type="reset" class="button">
+              Borrar
+            </button>
+            <button type="submit" class="button">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
